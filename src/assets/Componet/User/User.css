@@ -1,5 +1,9 @@
 .user{
-    border: 3px solid yellowgreen;
-    border-radius: 10px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: full;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 10px;
 }

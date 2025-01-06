@@ -10,6 +10,7 @@ import Home from './assets/Componet/Home/Home.jsx';
 import Contact from './assets/Componet/Contact/Contact.jsx';
 import About from './assets/Componet/About/About.jsx';
 import Service from './assets/Componet/Service/Service.jsx';
+import User from './assets/Componet/User/User.jsx';
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service></Service>
+      },
+      {
+        path: "/User",
+        element: <User></User>
       },
       {
         path: "/about",

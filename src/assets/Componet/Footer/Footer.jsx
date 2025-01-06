@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div>
-            <h5>Thinks for our website visiting!!</h5>
+            <h5>Thinks our website for visiting!!</h5>
         </div>
     );
 };

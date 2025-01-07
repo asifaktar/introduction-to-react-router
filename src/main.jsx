@@ -11,6 +11,8 @@ import Contact from './assets/Componet/Contact/Contact.jsx';
 import About from './assets/Componet/About/About.jsx';
 import Service from './assets/Componet/Service/Service.jsx';
 import User from './assets/Componet/User/User.jsx';
+import UsersDetails from './assets/Componet/UsersDetals/UsersDetails.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -34,6 +36,12 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About></About>
+      },
+      {
+        // dynamic users details check,
+        path: "/users/:usersId",
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.usersId}`),
+        element:<UsersDetails></UsersDetails>
       }
     ]
   }

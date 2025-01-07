@@ -12,6 +12,10 @@ import About from './assets/Componet/About/About.jsx';
 import Service from './assets/Componet/Service/Service.jsx';
 import User from './assets/Componet/User/User.jsx';
 import UsersDetails from './assets/Componet/UsersDetals/UsersDetails.jsx';
+import Posts from './assets/Componet/Posts/Posts.jsx';
+import PostDetail from './assets/Componet/Post-Detail/PostDetail.jsx';
+
+
 
 
 
@@ -23,6 +27,16 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element:<Contact></Contact>
+      },
+      {
+        path: "/posts",
+        loader: () => fetch("https://jsonplaceholder.typicode.com/photos"),
+        element: <Posts></Posts>    
+      },
+      {
+        path: '/post/:postId',
+        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/photos/${params.postId}`),
+        element: <PostDetail></PostDetail>
       },
       {
         path: "/service",

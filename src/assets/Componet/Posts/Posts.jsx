@@ -9,7 +9,7 @@ const Posts = () => {
     return (
         <div>
             <div>
-                <h2>hi im pots</h2>
+                <h2>Hi im posts page</h2>
                 <h4>Post length {posts.length}</h4>
                 <div className="posts">
                     {

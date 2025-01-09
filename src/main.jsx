@@ -34,6 +34,7 @@ const router = createBrowserRouter([
         element: <Posts></Posts>    
       },
       {
+        // PostDetails Dynamic system,
         path: '/post/:postId',
         loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/photos/${params.postId}`),
         element: <PostDetail></PostDetail>
